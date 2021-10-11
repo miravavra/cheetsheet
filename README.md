@@ -1,1 +1,2 @@
 # cheetsheet
+Návody a postupy.
