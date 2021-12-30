@@ -6,7 +6,7 @@
 `sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm`
 
 ## SW
-sudo dnf install krusader dropbox nautilus-dropbox keepassxc vlc conky conky-manager gnome-tweak-tool gimp darktable kdenlive veracrypt youtube-dl filezilla google-chrome-stable
+sudo dnf install krusader dropbox nautilus-dropbox keepassxc vlc conky conky-manager gnome-tweak-tool gimp darktable kdenlive veracrypt youtube-dl filezilla google-chrome-stable lpf-spotify-client
 
 ## NVIDIA ovladače
 ### Upgrade systému
