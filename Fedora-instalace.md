@@ -6,7 +6,9 @@
 `sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm`
 
 ## SW
-sudo dnf install krusader dropbox nautilus-dropbox keepassxc vlc conky conky-manager gnome-tweak-tool gimp darktable kdenlive veracrypt youtube-dl filezilla google-chrome-stable lpf-spotify-client
+`sudo dnf install krusader dropbox nautilus-dropbox keepassxc vlc conky conky-manager gnome-tweak-tool gimp darktable kdenlive youtube-dl filezilla google-chrome-stable lpf-spotify-client`
+### Veracrypt
+Stáhnout verzi pro CentOS z https://www.veracrypt.fr/en/Downloads.html.
 
 ## NVIDIA ovladače
 ### Upgrade systému
