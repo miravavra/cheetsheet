@@ -14,8 +14,7 @@ Stáhnout verzi pro CentOS z https://www.veracrypt.fr/en/Downloads.html.
 ### Upgrade systému
 `sudo dnf upgrade`
 ### Nvidia Driver a Cuda Support
-`sudo dnf -y install kmod-nvidia`
-
-`sudo dnf install xorg-x11-drv-nvidia-cuda`
+`sudo dnf -y install akmod-nvidia-470xx`
+`sudo dnf install xorg-x11-drv-nvidia-470xx-cuda`
 ### Restart
 Ověříme `neofetch` a `nvidia-smi`
