@@ -9,6 +9,15 @@
 `sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm`
 
 ## SW
+
+### Zrychlit DNF updaty
+`cd /etc/dnf`
+
+`sudo nano dnf.conf`
+
+Nastavit parametr `max_parallel_downloads=10`.
+
+### Instalovat SW
 `sudo dnf install krusader dropbox nautilus-dropbox keepassxc vlc conky conky-manager gnome-tweak-tool gimp darktable kdenlive youtube-dl filezilla google-chrome-stable lpf-spotify-client`
 
 ### Veracrypt
