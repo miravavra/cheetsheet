@@ -13,6 +13,10 @@ Tento plugin umožní nasdílet pro data nevyužitý prostor na systémovém dis
 ### Rozdělení disku
 Můžeme také "postaru" rozdělit disk a vytvořit tak samostatný oddíl pro data (např. pomocí rescue live distribuce na flashce).
 
+### Sdílená složka
+- Jako "klient" nastavíme celou síť `10.0.0.0/24`.
+- Do "Rozšířené předvolby" dám `no_subtree_check,insecure,all_squash`.
+
 ## Vypnutí uspání po zavření víka notebooku
 Upravíme `/etc/systemd/logind.conf` tak, že odkomentujeme (smažeme znak "#" na začátku řádku) následující řádky:
 ```
@@ -38,3 +42,10 @@ Instalací tohoto rozšíření [wiki.omv-extras.org](https://wiki.omv-extras.or
 Na stránce najdeme příkaz pro instalaci (provádíme jako root):
 
 `wget -O - https://github.com/OpenMediaVault-Plugin-Developers/packages/raw/master/install | bash`
+
+### Nainstalovat pluginy
+- Flashmemory
+- WeTTY (terminál)
+
+### Nastavení uživatele
+Nastavit skupiny: docker, mira, ssh, sudo, users
