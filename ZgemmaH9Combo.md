@@ -22,4 +22,16 @@ Recovery soft se instaluje jako první a jen jednou. Přez něj se instalují z�
 - Flashování se ukončí nápisem Flashing completed.
 - Z boot menu si vyberete Boot1 a nabootuje nainstalovaná záloha.
 
+## Instalace Softcam-feed
+OpenATV nemá v základu možost instalovat softcamy takže je nutné nejdříve přidat zdroj pro jejich stahování.
+
+### Stáhnout a nainstalovat Softcam-feed
+Nejnovější Softcam-feed stáhnout z https://www.mysatbox.tv/2016/08/softcams-openatv-softcam-feed-updated.html.
+Aktuálnost pro jistotu zkontrolovat na AB-FORUM například ve vlákně http://www.ab-forum.info/viewtopic.php?f=370&t=74281&start=160.
+Stažený IPK soubor nahrát na USB flašku a nainstalovat do satelitu.
+
+### Nainstalovat Oscam
+Mezi zdroji doplňků už nyní máme možnost vybrat Softcamy.
+Takže vybereme (Oscam-stable) a nainstalujeme.
+
 Zdroj: https://digitalne.ellano.sk/recenzie-a-testy-2/digitalne-prijimace/uhd-4k-prijimace/item/preview-zgemma-h9-combo
