@@ -49,3 +49,15 @@ Na stránce najdeme příkaz pro instalaci (provádíme jako root):
 
 ### Nastavení uživatele
 Nastavit skupiny: docker, mira, ssh, sudo, users
+
+## Nefunkční Portainer a další kontejnery
+Pokud běží Docker, ale žádné další kontejnery ne a při pokusu o spuštění hlásí chybu ohledně **Apparmor** tak je třeba Apparmor vypnout:
+```
+sudo mkdir -p /etc/default/grub.d
+echo 'GRUB_CMDLINE_LINUX_DEFAULT="$GRUB_CMDLINE_LINUX_DEFAULT apparmor=0"' | sudo tee /etc/default/grub.d/apparmor.cfg
+sudo update-grub
+sudo reboot
+
+sudo docker restart portainer
+```
+Případně dát Portainer znovu instalovat.
