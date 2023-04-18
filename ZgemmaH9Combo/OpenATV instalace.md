@@ -28,17 +28,8 @@ Pokud nemáme funkční žádné rozhraní nainstalujeme image z USB disku.
 - Flashování se ukončí nápisem Flashing completed.
 - Z boot menu si vyberete Boot1 a nabootuje nainstalovaná záloha.
 
-## Instalace Softcam-feed (repozitář)
+## Instalace Softcam
 OpenATV nemá v základu možost instalovat softcamy takže je nutné nejdříve přidat zdroj (repozitář) pro jejich stahování.
-
-### Instalace Softcam-feed z USB disku
-Nejnovější Softcam-feed stáhnout z https://www.mysatbox.tv/2016/08/softcams-openatv-softcam-feed-updated.html.
-Aktuálnost pro jistotu zkontrolovat na AB-FORUM například ve vlákně http://www.ab-forum.info/viewtopic.php?f=370&t=74281&start=160.
-Stažený IPK soubor nahrát na USB flašku a nainstalovat do satelitu.
-
-#### Nainstalovat Oscam
-Mezi zdroji doplňků už nyní máme možnost vybrat Softcamy.
-Takže vybereme (Oscam-stable) a nainstalujeme.
 
 ### Instalace Softcam-feed z příkazové řádky
 Zadat přez webif přijímače do terminálu:
@@ -48,5 +39,15 @@ Zadat přez webif přijímače do terminálu:
 nebo
 
 `wget -qO- --no-check-certificate "http://updates.mynonpublic.com/oea/feed" | bash -xv > /tmp/feed.log 2>&1`
+
+### Instalace Softcam-feed z USB disku
+Nejnovější Softcam-feed stáhnout z https://www.mysatbox.tv/2016/08/softcams-openatv-softcam-feed-updated.html.
+Aktuálnost pro jistotu zkontrolovat na AB-FORUM například ve vlákně http://www.ab-forum.info/viewtopic.php?f=370&t=74281&start=160.
+Stažený IPK soubor nahrát na USB flašku a nainstalovat do satelitu.
+
+### Instalace Oscam
+Mezi zdroji doplňků už nyní máme možnost vybrat Softcamy.
+Takže vybereme (Oscam-stable) a nainstalujeme.
+
 
 Zdroj: https://digitalne.ellano.sk/recenzie-a-testy-2/digitalne-prijimace/uhd-4k-prijimace/item/preview-zgemma-h9-combo
