@@ -50,12 +50,35 @@ Zbytek po dělení `%` (např.`7 % 2`)
 
 Umocnění (3 na druhou) `**` (např. `3 ** 2`)
 
+:=
+
+|
+
+^
+
+&
+
+<<
+
+>>
+
+@
+
+[]
+
+()
+
+{}
+
 ### Porovnávací operátory
 Hodnoty jsou vždy jen True nebo False (pozor na velikost písmen).
 
 Je rovno, není rovno `==`, `!=` (např. `1 == 1`, `1 != 1`)
 Menší než, větší než `<`, `>` (např. `3 < 5`, `3 > 5`)
 Menší nebo rovno, větší nebo rovno `<=`, `>=` (např. `3 <= 5`, `3 >= 5`)
+"A zároveň" `and` (např. `True and False`, `2 < 3 and 5 < 3`)
+"A nebo" `or` (např. `True or False`, `2 < 3 or 5 < 3`)
+"Ne" `not` (např. `not False`, `not 5 < 3`)
 
 ## Podmínky
 ### Podmínka if
