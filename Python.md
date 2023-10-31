@@ -1,7 +1,13 @@
 # Python
 ## Proměnné
 - Hodnoty se do proměnných přiřazují pomocí rovnítka `=`.
-- Hodnoty se zobrazují pomocí `print()`.
+
+- Hodnoty se zobrazují pomocí `print()`. Print takto bez argumentu vypíše prázdný řádek.
+
+  Při výpisu odděluje jednotlivé argumenty mezerou což mění argumetn `sep` (např.`print(1,2,3,4, sep=", ")` oddělí čárkou).
+
+  Na konci výpisu přejde na nový řádek což mění argumetn `end` (např.`print("1 + 2", end=" ")` místo přechodu na nový řádek napíše mezeru).
+
 - Hodnoty od uživatele se zadávají pomocí `input()`.
 - Názvy proměnných jsou `case sensitive`, nesmí začínat číslem, nesmí obsahovat mezeru (místo mezery se používá podtržítko `_`).
 - Opětovné přiřazení hodnoty do proměnné přepíše její původní hodnotu.
@@ -26,14 +32,15 @@ Když chceš načíst datový typ String zadej `promenna = input("Zadej text:")`
 Datový typ pro celá čísla bez desetinné čárky. Číslo může být pozitivní, negativní nebo nula.
 
 Datový typ Integer nesmí být uveden mezi uvozovkami.
-Když chceš načíst datový typ Integer zadej `promenna = int(input("Zadej číslo:"))`
+
+Když chceš načíst datový typ Integer zadej `promenna = int(input("Zadej číslo:"))`.
 
 ### Float
 Datový typ pro čísla s desetinnou čárkou. Číslo může být pozitivní, negativní.
 
 Datový typ Float nesmí být uveden mezi uvozovkami.
 
-Když chceš načíst datový typ Float zadej `promenna = float(input("Zadej číslo:"))`
+Když chceš načíst datový typ Float zadej `promenna = float(input("Zadej číslo:"))`.
 
 ### Komentář
 Komentáře jsou uvedeny za hash symbolem `#`, víceřádkové pak mezi dvojicí hash symbolů `"""` (nebo `'''`).
@@ -92,3 +99,65 @@ elif promenna >= jiné_číslo:  # Podmínek elif může být několik.
 else:  # Když nenastala shoda předchozích podmínek tak se provede následující.
     print("něco nakonec")
 ```
+
+## Funkce
+### Zjištění délky řetězce
+`len(argument)`
+Příklad:
+```
+slovo = "Ahoj"
+delka = len(slovo)
+print(delka)
+```
+
+### Převádění typů
+`str(123)` Převede jakoukoli hodnotu na řetězec
+
+`int("123")` Převádí na celé číslo, `int(124.4)` odstřihne z desetinných čísel necelou část
+
+`float("123.4")` Převádí na reálné číslo
+
+`bool(1)` Převede prázdný řetězec a 0 na False, jiné řetězce nebo čísla na True.
+
+### Náhoda
+`from random import randrange, uniform`
+`randrange(0, 10)` náhodné celé číslo od 0 do 9
+`uniform(0, 10)` náhodné reálné číslo 0 <= x < 10
+
+### Informace o programu
+`help(x)` Nápověda k objektu x.
+`dir()` Přehled jmen promnných, `dir(x)` přehled atributů objektu x.
+`type(x)` Typ objektu x.
+
+### Matematika
+`from math import sin, cos, tan, sqrt, pi`
+
+`round(x)` zaokrouhlení
+
+`floor(x)` zaokrouhlení dolů
+
+`ceil(x)` zaokrouhlení nahoru
+
+`sin(u)`, `cos(u)`, `tan(u)` goniometrické funkce v radiánech
+
+`degrees(r)` radiány na stupně, `radians(d)` stupně na radiány
+
+`sqrt(x)` druhá odmocnina
+
+`abs(x)` absolutní hodnota
+
+## Cykly
+### Cyklus for
+Jako proměnná pouze pro potřeby cyklu se často používá "i", "j" nebo prázdná proměnná "_".
+
+```
+for pozdrav in "Ahoj", "Hello", "Hola", "Hey":
+    print(pozdra + "!")
+```
+
+```
+for i in range(5):
+    print(i)
+```
+
+### Cyklus while
