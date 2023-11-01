@@ -103,7 +103,7 @@ else:  # Když nenastala shoda předchozích podmínek tak se provede následuj�
 ## Funkce
 ### Zjištění délky řetězce
 `len(argument)`
-Příklad:
+__Příklad:__
 ```
 slovo = "Ahoj"
 delka = len(slovo)
@@ -150,14 +150,22 @@ print(delka)
 ### Cyklus for
 Jako proměnná pouze pro potřeby cyklu se často používá "i", "j" nebo prázdná proměnná "_".
 
+__Příklad:__
 ```
 for pozdrav in "Ahoj", "Hello", "Hola", "Hey":
     print(pozdra + "!")
 ```
 
+__Příklad:__
 ```
 for i in range(5):
     print(i)
 ```
 
 ### Cyklus while
+Ukončení cyklu provede příkaz `break`.
+
+```
+while podmínka:
+    print("něco")
+```
