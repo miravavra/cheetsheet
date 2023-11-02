@@ -24,9 +24,24 @@ Kontrolu datového typu v proměnné provedeme pomocí `type()`.
 ### String
 Datový typ pro text.
 
-Datový typ String musí být uveden mezi uvozovkami `"` nebo `'` (je jedno které, ale musí se shodovat).
+Datový typ String musí být uveden mezi uvozovkami `"` nebo `'` (je jedno které, ale musí se shodovat). Pro zápis uvozovek v řetězci lze zapsat se zpětným lomítkem `\"` nebo `\'`.
 
 Když chceš načíst datový typ String zadej `promenna = input("Zadej text:")`
+
+#### Speciální znaky
+`\n` znak pro nový řádek (několik nových řádků lze také ohraničit trojitými uvozovkami - způsobuje odsazení textu pokud je v odsazeném kódu)
+`\t` vypíše tabulátor
+`\\` vypíše zpětné lomítko
+
+Se zpětným lomítkem se dá zadat jakýkoliv znak (včetně emoji).
+
+Zápis podle jména standardu Unicode:
+
+`\N{název}`
+
+Zápis podle identifikačního čísla standardu Unicode:
+
+`\x{název}`, `\u{název}`, `\U{název}`
 
 ### Integer
 Datový typ pro celá čísla bez desetinné čárky. Číslo může být pozitivní, negativní nebo nula.
