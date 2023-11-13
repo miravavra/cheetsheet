@@ -118,6 +118,7 @@ else:  # Když nenastala shoda předchozích podmínek tak se provede následuj�
 ## Funkce
 ### Zjištění délky řetězce
 `len(argument)`
+
 __Příklad:__
 ```
 slovo = "Ahoj"
@@ -128,12 +129,14 @@ print(delka)
 Vrací hodnotu `True` pokud je/není podřetězec obsažen v řetězci.
 
 `podřetězec` in `řetězec`
+
 __Příklad:__
 ```
 "oko" in "čokoláda"
 ```
 
 `podřetězec` not in `řetězec`
+
 __Příklad:__
 ```
 "dub" not in "čokoláda"
@@ -198,3 +201,13 @@ Ukončení cyklu provede příkaz `break`.
 while podmínka:
     print("něco")
 ```
+
+## Metody
+Jsou svázané s objektem a volají se tak, že se za objekt napíše tečka, za ní jméno metody a to celé se připojí závorky s případnými argumenty.
+
+- promenna.upper() Převod na velká písmena
+- promenna.lower() Převod na malá písmena
+- retezec.count(podretezec) Počet výskytů podřetězce v řetězci
+- retezec.index(podretezec) Pozice 1. výskytu podřetězce v řetězci
+- retezec.index(podretezec, pozice) Jako index, ale hledá od pozice
+- 
