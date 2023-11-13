@@ -124,6 +124,20 @@ slovo = "Ahoj"
 delka = len(slovo)
 print(delka)
 ```
+### Zjištění jestli řetězec obsahuje/neobsahuje podřetězec
+Vrací hodnotu `True` pokud je/není podřetězec obsažen v řetězci.
+
+`podřetězec` in `řetězec`
+__Příklad:__
+```
+"oko" in "čokoláda"
+```
+
+`podřetězec` not in `řetězec`
+__Příklad:__
+```
+"dub" not in "čokoláda"
+```
 
 ### Převádění typů
 `str(123)` Převede jakoukoli hodnotu na řetězec
