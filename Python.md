@@ -210,4 +210,8 @@ Jsou svázané s objektem a volají se tak, že se za objekt napíše tečka, za
 - retezec.count(podretezec) Počet výskytů podřetězce v řetězci
 - retezec.index(podretezec) Pozice 1. výskytu podřetězce v řetězci
 - retezec.index(podretezec, pozice) Jako index, ale hledá od pozice
+- retezec.lstrip() Odstraní bílé znaky* ze začátku
+- retezec.rstrip() Odstraní bílé znaky* z konce
+- retezec.strip() Odstraní bílé znaky z obou stran
+- retezec.replace(a, b) Nahradí podřetězce a za b
 - 
