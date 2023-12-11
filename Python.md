@@ -214,4 +214,6 @@ Jsou svázané s objektem a volají se tak, že se za objekt napíše tečka, za
 - retezec.rstrip() Odstraní bílé znaky* z konce
 - retezec.strip() Odstraní bílé znaky z obou stran
 - retezec.replace(a, b) Nahradí podřetězce a za b
-- 
+- retezec.startswith(s) Začíná řetězec podřetězcem s?
+- retezec.endswith(s) Končí řetězec podřetězcem s?
+- retezec.format() Formátování
