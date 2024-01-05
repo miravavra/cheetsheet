@@ -178,6 +178,27 @@ __Příklad:__
 
 `abs(x)` absolutní hodnota
 
+### Definice vlastních funkcí
+Ukončení funkce provede příkaz `return`.
+Když funkce neskončí příkazem `return`, automaticky vrátí hodnotu `None`.
+Vstupy (jako `input`) a výstupy (jako `print`) přímo ve funkci omezují možnost s výsledkem dále pracovat = je lepší zpracování výsledku nechat mimo funkci.
+
+__Příklad:__
+```
+from math import pi
+
+def obsah_elipsy(a, b):
+    '''Vrátí obsah elipsy s poloosami daných délek.'''
+    return pi * a * b # Jen samotný výpočet.
+
+# Print a input jsou vně funkce.
+x = float(input('Zadej délku poloosy 1: '))
+y = float(input('Zadej délku poloosy 2: '))
+print('Obsah je', obsah_elipsy(x, y))
+
+```
+
+
 ## Cykly
 ### Cyklus for
 Jako proměnná pouze pro potřeby cyklu se často používá "i", "j" nebo prázdná proměnná "_".
