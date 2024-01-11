@@ -238,3 +238,8 @@ Jsou svázané s objektem a volají se tak, že se za objekt napíše tečka, za
 - retezec.startswith(s) Začíná řetězec podřetězcem s?
 - retezec.endswith(s) Končí řetězec podřetězcem s?
 - retezec.format() Formátování
+
+## Moduly
+Jsou to vlastně takové knihovny z kterých můžeš importovat např. jednotlivé proměnné nebo můžeš importovat celý modul.
+Vlastní modul vytvoříš tak, že uděláš pythoní soubor.
+
