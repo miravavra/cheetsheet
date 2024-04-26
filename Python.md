@@ -243,3 +243,43 @@ Jsou svázané s objektem a volají se tak, že se za objekt napíše tečka, za
 Jsou to vlastně takové knihovny z kterých můžeš importovat např. jednotlivé proměnné nebo můžeš importovat celý modul.
 Vlastní modul vytvoříš tak, že uděláš pythoní soubor.
 
+## Seznamy
+Seznamy jsou měnitelné.
+
+### Měnění seznamů
+- append Přidá prvek na konec seznamu
+- extend() Přidá více prvků najednou
+- pop() Odebere daný prvek (defaultně poslední) a také je to jeho návratová hodnota
+- insert() Přidá prvek na danou pozici
+- remove() Odstraní první výskyt daného prvku
+- clear() odstraní všechny prvky
+- sort() seřadí seznam "podle abecedy", čísla vzestupně
+- reverse() obrátí pořadí prvků
+
+### Vybírání ze seznamu
+Výběr prvnku na určité pozici.
+```
+zviratka=['pes', 'kočka', 'králík']
+print(zviratka[2])
+```
+
+Výběr podseznamu.
+```
+zviratka=['pes', 'kočka', 'králík', 'had', 'andulka']
+print(zviratka[1:-2])
+```
+
+### Měnění prvků
+```
+zviratka=['pes', 'kočka', 'králík', 'had', 'andulka']
+print(zviratka[1:-2])
+zviratka[1:-2]=['koťátko', 'králíček']
+print(zviratka)
+```
+
+### Mazání prvků
+- přiřazením prázdné hodnoty `[]` Tato metoda není moc přehledná
+- pop() Smaže daný (defaultně poslední) prvek
+- remove() Smaže první výskyt
+- clear Smaže celý seznam
+
