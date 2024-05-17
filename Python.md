@@ -256,6 +256,9 @@ Seznamy jsou měnitelné.
 - sort() seřadí seznam "podle abecedy", čísla vzestupně
 - reverse() obrátí pořadí prvků
 
+__Příklad:__
+`seznam.sort(reverse=True)`
+
 ### Vybírání ze seznamu
 Výběr prvnku na určité pozici.
 ```
@@ -280,6 +283,28 @@ print(zviratka)
 ### Mazání prvků
 - přiřazením prázdné hodnoty `[]` Tato metoda není moc přehledná
 - pop() Smaže daný (defaultně poslední) prvek
+
+__Příklad:__
+`liznuta_karta = balicek.pop()`
+
 - remove() Smaže první výskyt
 - clear Smaže celý seznam
 
+### Tvoření seznamů
+- `list` Funkce list převádí na seznam. Z řetězce udělá seznam znaků, z range udělá seznam čísel.
+```
+abeceda = list('abcdefghijklmnopqrstuvwxyz')
+cisla = list(range(100))
+```
+- metoda `split`  Když chceme dostat seznam slov
+```
+slova = 'Tato věta je složitá, rozdělme ji na slova!'.split()
+```
+Když máš nějaká data oddělená čárkami, použij split s čárkou.
+```
+zaznamy = '3A,8B,2E,9D'.split(',')
+```
+- metoda `join`  Když chceme spojit seznam řetězců zase dohromady do jediného řetězce.
+```
+veta = ' '.join(slova)
+```
