@@ -248,6 +248,8 @@ Vlastní modul vytvoříš tak, že uděláš pythoní soubor.
 ## Seznamy
 Seznamy jsou měnitelné.
 
+Seznamy se používají, když předem nevíš, kolik v nich přesně bude hodnot, nebo když je hodnot mnoho. Jinak lze použít N-tice.
+
 ### Měnění seznamů
 - append Přidá prvek na konec seznamu
 - extend() Přidá více prvků najednou
@@ -309,4 +311,20 @@ zaznamy = '3A,8B,2E,9D'.split(',')
 - metoda `join`  Když chceme spojit seznam řetězců zase dohromady do jediného řetězce.
 ```
 veta = ' '.join(slova)
+```
+## N-tice
+N-tice se nedají měnit.
+
+N-tice se často používají na hodnoty různých typů, kdy má každá „pozice” v n-tici úplně jiný význam. Například seznam můžeš použít na písmena abecedy, ale dvojice „podíl a zbytek“ je n-tice.
+
+Nemají tedy metody jako `append` a `pop` a nedá se jim přiřazovat do prvků (např. `ntice[1] = 2`). Dají se ale použít v cyklu `for` a dají se z nich číst jednotlivé prvky (např. `print(ntice[1])`).
+
+Jinak se chovají podobně jako seznamy.
+
+Když chceme n-tici předat do funkce, narazíme na problém, že čárka odděluje jednotlivé argumenty funkce. V podobných případech musíme n-tici uzavřít do závorek, aby bylo jasné, že jde o jednu hodnotu (byť složenou).
+
+### Malé N-tice
+```
+prazdna_ntice = ()
+jednoprvkova_ntice = ('a', )
 ```
