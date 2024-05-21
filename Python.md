@@ -155,6 +155,8 @@ __Příklad:__
 `from random import randrange, uniform`
 `randrange(0, 10)` náhodné celé číslo od 0 do 9
 `uniform(0, 10)` náhodné reálné číslo 0 <= x < 10
+`random.shuffle(balicek)` Funkce shuffle zamíchá seznam.
+`random.choice(mozne_tahy)` Funkce choice ze seznamu vybere jeden náhodný prvek.
 
 ### Informace o programu
 `help(x)` Nápověda k objektu x.
