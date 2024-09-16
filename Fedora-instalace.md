@@ -23,6 +23,12 @@ Nastavit parametr `max_parallel_downloads=10`.
 ### Instalovat multimediální knihovny
 `sudo dnf group install Multimedia`
 
+### Instalovat Flatpak
+`sudo dnf install -y flatpak`
+
+Povolit Flathub
+`flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
+
 ### Veracrypt
 Stáhnout verzi pro CentOS z https://www.veracrypt.fr/en/Downloads.html.
 
