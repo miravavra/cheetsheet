@@ -20,6 +20,9 @@ Nastavit parametr `max_parallel_downloads=10`.
 ### Instalovat SW
 `sudo dnf install krusader dropbox nautilus-dropbox keepassxc vlc gnome-tweak-tool gimp darktable kdenlive yt-dlp filezilla google-chrome-stable lpf-spotify-client`
 
+### Instalovat multimediální knihovny
+`sudo dnf group install Multimedia`
+
 ### Veracrypt
 Stáhnout verzi pro CentOS z https://www.veracrypt.fr/en/Downloads.html.
 
