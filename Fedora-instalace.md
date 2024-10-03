@@ -66,3 +66,17 @@ Ověříme `neofetch` a `nvidia-smi`
 
 ### Odebrání NVIDIA
 `sudo dnf remove *nvidia*`
+
+## Připojení k NAS
+
+### Mount NAS do PC
+Do `/etc/fstab` doplnit:
+`//nas-qnap.local/Multimedia /mnt/NAS_Qnap/Multimedia cifs username=admin,password=admin,uid=1000,gid=1000,rw,file_mode=0777,dir_mode=0777,iocharset=utf8,rw 0 0`
+
+### Symlink do finálního adersáře
+V CMD spustit příkazy:
+```
+sudo ln -s /mnt/NAS_Qnap/Multimedia/Cviceni/ ~/Videa/NAS_cviceni
+sudo ln -s /mnt/NAS_Qnap/Multimedia/Filmy/ ~/Videa/NAS_filmy
+sudo ln -s /mnt/NAS_Qnap/Multimedia/Serialy/ ~/Videa/NAS_serialy
+```
