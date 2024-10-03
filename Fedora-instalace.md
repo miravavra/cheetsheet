@@ -71,6 +71,7 @@ Ověříme `neofetch` a `nvidia-smi`
 
 ### Mount NAS do PC
 Do `/etc/fstab` doplnit:
+
 `//nas-qnap.local/Multimedia /mnt/NAS_Qnap/Multimedia cifs username=admin,password=admin,uid=1000,gid=1000,rw,file_mode=0777,dir_mode=0777,iocharset=utf8,rw 0 0`
 
 ### Symlink do finálního adersáře
