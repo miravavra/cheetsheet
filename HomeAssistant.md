@@ -93,3 +93,8 @@ V nabídce "Nástroje pro vývojáře" spustit kontrolu tlačítkem "Zkontrolova
 Restartovat Home Assistenta.
 
 Pokud všechno funguje měli bychom v záložce Historie vidět měnící se záznamy.
+
+### Odstranit starou SQLite databázi
+Pomocí File editoru odstranit soubor `home-assistant_v2.db`.
+
+Zdroj: https://www.youtube.com/watch?v=NgAs5CFLpks
